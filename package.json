@@ -1,0 +1,24 @@
+{
+  "name": "retinadelcorazon",
+  "version": "1.0.0",
+  "description": "Pagina dedicada a guardar imagenes y crear momentos memorables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofiaRamz/RetinaDelCorazon.git"
+  },
+  "keywords": [
+    "retina",
+    "del",
+    "corazon"
+  ],
+  "author": "Sofia Ramirez <l23940403@tlajomulco.tecnm.mx>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SofiaRamz/RetinaDelCorazon/issues"
+  },
+  "homepage": "https://github.com/SofiaRamz/RetinaDelCorazon#readme"
+}
