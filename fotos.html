@@ -1,0 +1,43 @@
+<!-- HTML para la página despues de iniciar sesión  -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sube y Ve tus Fotos</title>
+  <link rel="stylesheet" href="fotos-styles.css">
+  <link rel="shortcut icon" href="./Recursos/Logo pagina.jpg"> <!-- icono a la pagina -->
+</head>
+<body>
+  <header>
+    <img src="./Recursos/Logo pagina.jpg" alt="Logo Retina del corazón" id="header-img">
+    <h1>Retina del corazón</h1>
+    <nav>
+      <button id="logoutBtn">Cerrar Sesión</button>
+    </nav>
+  </header>
+
+  <div id="container">
+    <!-- Barra lateral fija a la izquierda -->
+    <aside id="sidebar">
+      <h2>Sube un recuerdo memorable</h2>
+      <form id="uploadForm">
+        <label for="imageUpload">Selecciona una Imagen:</label>
+        <input type="file" id="imageUpload" accept=".jpg, .png" required>
+        <label for="description">Descripción:</label>
+        <textarea id="description" required></textarea>
+        <button type="submit">Subir</button>
+      </form>
+    </aside>
+
+    <!-- Área principal para la galería -->
+    <main id="gallery">
+      <h2>Álbum Fotos</h2>
+      <!-- Aquí aparecerán las fotos publicadas -->
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

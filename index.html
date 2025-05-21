@@ -1,0 +1,97 @@
+<!-- HTML para la página prncipal  -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retina del corazón</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="./Recursos/Logo pagina.jpg"> <!-- icono a la pagina -->
+</head>
+<body>
+  <header>
+    <img src="./Recursos/Logo pagina.jpg" alt="Logo Retina del corazón" id="header-img">
+    <h1>Retina del corazón</h1>
+    <nav id="menu-cuenta">
+      <button id="loginBtn">Iniciar Sesión</button>
+      <button id="registerBtn">Registrarse</button>
+    </nav>
+  </header>
+
+  <!-- Fondo oscuro de la ventana -->
+  <div id="popup-overlay" class="popup-overlay"></div>
+
+  <!-- Contenido de la ventana emergente -->
+  <div id="popup" class="popup">
+      <span class="close-btn">&times;</span>
+      <img src="./Recursos/Logo pagina.jpg" alt="Logo Retina del corazón" id="popup-logo">
+      <div class="text-container">
+        <p>
+          Espacio diseñado para almacenar y compartir sus fotos favoritas. Cuenta con una 
+          galería de imágenes, un sistema de registro e inicio de sesión y opciones 
+          interactiva que permite gestionar imágenes de manera personalizada. Utiliza un 
+          diseño minimalista e intuitivo que busca crear un espacio acogedor para guardar 
+          sus momentos especiales. 
+        </p>
+    </div>
+  </div>
+
+  <main>
+    
+    <section id="presentacion">
+      <p>"Un espacio para guardar tus momentos más preciados en fotografías."</p>
+    </section>
+
+    <!-- Sección de galería para mostrar fotos -->
+    <section id="gallery">
+        <img src="./Recursos/img1.jpg" alt="Foto 1">
+        <img src="./Recursos/img2.jpg" alt="Foto 2">
+        <img src="./Recursos/img3.jpg" alt="Foto 3">
+        <img src="./Recursos/img4.jpg" alt="Foto 4">
+        <img src="./Recursos/img5.jpg" alt="Foto 5">
+        <img src="./Recursos/img6.jpg" alt="Foto 6">
+        <img src="./Recursos/img7.jpg" alt="Foto 7">
+        <img src="./Recursos/img8.jpg" alt="Foto 8">
+        <img src="./Recursos/img9.jpg" alt="Foto 9">
+        <img src="./Recursos/img10.jpg" alt="Foto 10">
+        <img src="./Recursos/img11.jpg" alt="Foto 11">
+        <img src="./Recursos/img12.jpg" alt="Foto 12">
+        <img src="./Recursos/img13.jpg" alt="Foto 13">
+        <img src="./Recursos/img14.jpg" alt="Foto 14">
+        <img src="./Recursos/img15.jpg" alt="Foto 15">
+        <img src="./Recursos/img16.jpg" alt="Foto 16">
+    </section>
+
+    <!-- Menú desplegable de registro -->
+    <section id="registerDropdown" class="dropdown" style="display: none;">
+      <h2>Registrarse</h2>
+      <form id="registerForm">
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Registrarse</button>
+        <p id="registerMessage"></p>
+      </form>
+    </section>
+
+    <!-- Menú desplegable de inicio de sesión -->
+    <section id="loginDropdown" class="dropdown" style="display: none;">
+      <h2>Iniciar Sesión</h2>
+      <form id="loginForm">
+        <label for="loginUsername">Nombre de Usuario:</label>
+        <input type="text" id="loginUsername" name="loginUsername" required>
+        <label for="loginPassword">Contraseña:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+        <button type="submit">Iniciar Sesión</button>
+        <p id="loginMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
